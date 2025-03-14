@@ -1,0 +1,25 @@
+body {
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+#contianer {
+    width: 100vw;
+    height: 100vh;
+}
+
+#votexpertlogo {
+    height: 113px;
+    width: auto;
+    position: absolute;
+    top: 1%;
+    left: 1%;
+}
+
+#parlamentlogo {
+    height: 93px;
+    width: auto;
+    position: absolute;
+    bottom: 1%;
+    left: 1%;
+}
