@@ -13,6 +13,16 @@
     src: url(../style/fonts/Passion_One/PassionOne-Regular.ttf);
 }
 
+:root {
+    --blueTextColor: #00569C;
+    --grayTextColor: #737373;
+    --grayBackColor: #D9D9D9;
+    --navColor: #008573;
+    --buttonColor: #C2464B;
+    --buttonColorlight: rgba(194, 70, 75, 0.58);
+    --hintColor: #FFFB00;
+}
+
 body {
     box-sizing: border-box;
     overflow: hidden;
@@ -53,12 +63,40 @@ body {
     color: black;
     font-family: passionone;
     letter-spacing: 2px;
+    line-height: 1vh;
+    font-size: 20vh;
 }
 
 #maintext h2 {
-    color: #00569C;
+    color: var(--blueTextColor);
+    font-family: passionone;
+    letter-spacing: 2px;
+    font-size: 10vh;
+    line-height: 1vh;
 }
 
 #maintext p {
-    color: #737373;
+    color: var(--grayTextColor);
+    font-size: 3vh;
+}
+
+#maintext #testbutton {
+    background-color: var(--blueTextColor);
+    font-family: oswald;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50vw;
+    width: 18vw;
+    height: 10vh;
+    margin-top: 4vh;
+
+    p {
+        color: white;
+        margin: 1vw;
+        letter-spacing: 0.05vw;
+    }
+    #testbuttonpfeil {
+        height: 2vh;
+    }
 }
