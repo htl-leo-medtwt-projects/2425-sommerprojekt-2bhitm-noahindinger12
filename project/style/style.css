@@ -14,6 +14,7 @@
 }
 
 :root {
+    --backgroundColor: #ffffff;
     --blueTextColor: #00569C;
     --grayTextColor: #737373;
     --grayBackColor: #D9D9D9;
@@ -26,6 +27,7 @@
 body {
     box-sizing: border-box;
     overflow: hidden;
+    background-color: var(--backgroundColor);
 }
 
 #contianer {
@@ -90,6 +92,8 @@ body {
     width: 18vw;
     height: 10vh;
     margin-top: 4vh;
+    margin-right: auto;
+    margin-left: auto;
 
     p {
         color: white;
@@ -99,4 +103,33 @@ body {
     #testbuttonpfeil {
         height: 2vh;
     }
+}
+
+/*------------------NAV---------------------*/
+
+nav {
+    display: flex;
+    margin-top: -14vh;
+
+    #home {
+        background-color: var(--blueTextColor);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 25vh;
+        height: 25vh;
+        border-radius: 12.5vh;
+        p {
+            font-weight: bolder;
+            font-size: 2.5vh;
+            margin-bottom: -9vh;
+        }
+        #navbuttonhomeicon {
+            height: 3vh;
+            margin-bottom: -11vh;
+            margin-right: 0.4vw;
+        }
+    }
+
+
 }
