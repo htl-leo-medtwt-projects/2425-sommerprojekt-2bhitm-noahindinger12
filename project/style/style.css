@@ -28,6 +28,7 @@ body {
     box-sizing: border-box;
     overflow: hidden;
     background-color: var(--backgroundColor);
+    user-select: none;
 }
 
 #contianer {
@@ -109,6 +110,7 @@ body {
 
 nav {
     display: flex;
+    justify-content: flex-end;
     margin-top: -14vh;
 
     #home {
@@ -119,6 +121,7 @@ nav {
         width: 25vh;
         height: 25vh;
         border-radius: 12.5vh;
+        margin-right: 2vw;
         p {
             font-weight: bolder;
             font-size: 2.5vh;
@@ -130,6 +133,65 @@ nav {
             margin-right: 0.4vw;
         }
     }
-
-
+    #login {
+        background-color: var(--grayBackColor);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 25vh;
+        height: 25vh;
+        border-radius: 12.5vh;
+        margin-right: 2vw;
+        p {
+            font-weight: bolder;
+            font-size: 2.5vh;
+            margin-bottom: -9vh;
+        }
+        #navbuttonloginicon {
+            height: 3vh;
+            margin-bottom: -11vh;
+            margin-right: 0.4vw;
+        }
+    }
+    #game {
+        background-color: var(--grayBackColor);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 25vh;
+        height: 25vh;
+        border-radius: 12.5vh;
+        margin-right: 2vw;
+        p {
+            font-weight: bolder;
+            font-size: 2.5vh;
+            margin-bottom: -9vh;
+        }
+        #navbuttongameicon {
+            height: 3vh;
+            margin-bottom: -11vh;
+            margin-right: 0.4vw;
+        }
+    }
+    #settings {
+        background-color: var(--grayBackColor);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 25vh;
+        height: 25vh;
+        border-radius: 12.5vh;
+        margin-right: 2vw;
+        p {
+            font-weight: bolder;
+            font-size: 2.5vh;
+            margin-bottom: -9vh;
+        }
+        #navbuttonsettingsicon {
+            height: 3vh;
+            margin-bottom: -11vh;
+            margin-right: 0.4vw;
+        }
+    }
+    
 }
