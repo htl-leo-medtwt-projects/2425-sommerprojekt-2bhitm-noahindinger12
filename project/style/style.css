@@ -101,6 +101,7 @@ body {
         margin: 1vw;
         letter-spacing: 0.05vw;
     }
+
     #testbuttonpfeil {
         height: 2vh;
     }
@@ -122,17 +123,20 @@ nav {
         height: 25vh;
         border-radius: 12.5vh;
         margin-right: 2vw;
+
         p {
             font-weight: bolder;
             font-size: 2.5vh;
             margin-bottom: -9vh;
         }
+
         #navbuttonhomeicon {
             height: 3vh;
             margin-bottom: -11vh;
             margin-right: 0.4vw;
         }
     }
+
     #login {
         background-color: var(--grayBackColor);
         display: flex;
@@ -142,17 +146,20 @@ nav {
         height: 25vh;
         border-radius: 12.5vh;
         margin-right: 2vw;
+
         p {
             font-weight: bolder;
             font-size: 2.5vh;
             margin-bottom: -9vh;
         }
+
         #navbuttonloginicon {
             height: 3vh;
             margin-bottom: -11vh;
             margin-right: 0.4vw;
         }
     }
+
     #game {
         background-color: var(--grayBackColor);
         display: flex;
@@ -162,17 +169,20 @@ nav {
         height: 25vh;
         border-radius: 12.5vh;
         margin-right: 2vw;
+
         p {
             font-weight: bolder;
             font-size: 2.5vh;
             margin-bottom: -9vh;
         }
+
         #navbuttongameicon {
             height: 3vh;
             margin-bottom: -11vh;
             margin-right: 0.4vw;
         }
     }
+
     #settings {
         background-color: var(--grayBackColor);
         display: flex;
@@ -182,16 +192,71 @@ nav {
         height: 25vh;
         border-radius: 12.5vh;
         margin-right: 2vw;
+
         p {
             font-weight: bolder;
             font-size: 2.5vh;
             margin-bottom: -9vh;
         }
+
         #navbuttonsettingsicon {
             height: 3vh;
             margin-bottom: -11vh;
             margin-right: 0.4vw;
         }
     }
-    
+
+}
+
+/*---------------------Settings Popup Sprache--------------------*/
+
+
+#settingsPopupSprache {
+    width: 60vw;
+    height: 77vh;
+    background-color: var(--grayBackColor);
+    border-radius: 5vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    #innerrectangle {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 5vw;
+        width: 56vw;
+        height: 68vh;
+        background-color: white;
+
+        #back {
+            display: flex;
+            gap: 1vw;
+            margin-left: 2vw;
+            margin-top: 2vh;
+            #backbutton {
+                margin-top: 1vh;
+                width: 4vw;
+                height: 4vw;
+            }
+
+            #einstellungen {
+                color: black;
+                font-family: passionone;
+                letter-spacing: 1px;
+                font-size: 4vh;
+            }
+        }
+
+        #changeSprache {
+            #changesettingbuttons {
+                display: flex;
+            }
+        }
+
+    }
+
+
 }
