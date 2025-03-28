@@ -210,8 +210,16 @@ nav {
 
 /*---------------------Settings Popup Sprache--------------------*/
 
+.active {
+    background-color: var(--blueTextColor);
+}
+
+#settingspopup {
+    display: none;
+}
 
 #settingsPopupSprache {
+    z-index: 1000;
     width: 60vw;
     height: 77vh;
     background-color: var(--grayBackColor);
@@ -231,11 +239,40 @@ nav {
         height: 68vh;
         background-color: white;
 
+        #speichernbuttons {
+            display: flex;
+            gap: 3vw;
+            margin-left: 7vw;
+            margin-top: 3vh;
+
+            #savebutton {
+                background-color: var(--blueTextColor);
+                color: white;
+                width: 9vw;
+                height: 5vh;
+                border-radius: 0.5vw;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            #standardSprache {
+                color: var(--blueTextColor);
+                width: 9vw;
+                height: 5vh;
+                border-radius: 0.5vw;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
         #back {
             display: flex;
             gap: 1vw;
             margin-left: 2vw;
             margin-top: 2vh;
+
             #backbutton {
                 margin-top: 1vh;
                 width: 4vw;
@@ -253,7 +290,33 @@ nav {
         #changeSprache {
             #changesettingbuttons {
                 display: flex;
+                gap: 3vw;
+                margin-left: 7vw;
+                margin-top: 3vh;
+
+                #darkmode,
+                #sprache {
+                    background-color: var(--grayBackColor);
+                    width: 9vw;
+                    height: 5vh;
+                    border-radius: 0.5vw;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
             }
+
+            #sprachen {
+                display: flex;
+                gap: 4vw;
+                margin-left: 7.5vw;
+                margin-top: 6vh;
+                margin-bottom: 6vh;
+                img {
+                    width: 8vw;
+                }
+            }
+
         }
 
     }

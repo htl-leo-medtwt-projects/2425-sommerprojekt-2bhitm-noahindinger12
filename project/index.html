@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <script src="script/script.js" defer></script>
     <title>VoteXpert - Dein smarter Wahlhelfer</title>
 </head>
+
 <body>
     <div id="contianer">
         <img src="img/logos/VoteXpert_gray.png" alt="VoteXpertLogo" id="votexpertlogo">
@@ -16,10 +18,10 @@
 
         <div id="maintext">
             <h1>VoteXpert</h1>
-                <h2>Dein smarter Wahlhelfer</h2>
-                <p>Finde heraus, welche Partei am besten zu dir passt und lese Personalisierte News! <br>
-                    Beantworte einige Fragen und bekomme eine maßgeschneiderte Empfehlung.
-                </p>
+            <h2>Dein smarter Wahlhelfer</h2>
+            <p>Finde heraus, welche Partei am besten zu dir passt und lese Personalisierte News! <br>
+                Beantworte einige Fragen und bekomme eine maßgeschneiderte Empfehlung.
+            </p>
             <div id="testbutton">
                 <p>Jetzt Test starten</p>
                 <img src="img/assets/icons/fast-forward.png" alt="pfeil" id="testbuttonpfeil">
@@ -39,44 +41,50 @@
                 <img src="img/assets/icons/games.png" alt="gameicon" id="navbuttongameicon">
                 <p>Game</p>
             </div>
-            <div id="settings">
+            <div id="settings" onclick="OpenOverlays(settings)">
                 <img src="img/assets/icons/setting.png" alt="settingsicon" id="navbuttonsettingsicon">
                 <p>Settings</p>
             </div>
         </nav>
 
 
-        <div id="settingsPopupSprache">
-            <div id="innerrectangle">
-                <div id="back">
-                    <img src="img/assets/icons/back.png" alt="" id="backbutton">
-                    <p id="einstellungen">Einstellungen</p>
-                </div>
-            <div id="changeSprache">
-                <div id="changesettingbuttons">
-                    <div id="darkmode">
-                        <p>Dark Mode</p>
+        <div id="settingspopup">
+            <div id="settingsPopupSprache">
+                <div id="innerrectangle">
+                    <div id="back" onclick="CloseOverlays(settings)">
+                        <img src="img/assets/icons/back.png" alt="" id="backbutton">
+                        <p id="einstellungen">Einstellungen</p>
                     </div>
-                    <div id="sprache">
-                        <p>Sprache</p>
+                    <div id="changeSprache">
+                        <div id="changesettingbuttons">
+                            <div id="darkmode">
+                                <p>Dark mode</p>
+                            </div>
+                            <div id="sprache" class="active">
+                                <p>Sprache</p>
+                            </div>
+                        </div>
+                        <div id="sprachen">
+                            <img src="img/assets/austria.png" id="deutsch">
+                            <img src="img/assets/united-states.png" id="englisch">
+                            <img src="img/assets/spain.png" id="spanisch">
+                        </div>
+                        <div id="speichernbuttons">
+                            <div id="savebutton">
+                                <p>Speichern</p>
+                            </div>
+                            <div id="standardSprache">
+                                <p>Standard</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div id="sprachen">
-                    <img src="" id="deutsch">
-                    <img src="" id="englisch">
-                    <img src="" id="spanisch">
-                </div>
-                <div id="savebutton">
-                    <p>Speichern</p>
-                </div>
-                <p id="standardSprache">Standard</p>
             </div>
-            </div>
-           
         </div>
-
+        
 
     </div>
 
 </body>
+
 </html>
