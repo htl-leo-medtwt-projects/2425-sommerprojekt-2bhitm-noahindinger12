@@ -294,9 +294,17 @@ nav {
                 margin-left: 7vw;
                 margin-top: 3vh;
 
-                #darkmode,
-                #sprache {
+                #darkmode {
                     background-color: var(--grayBackColor);
+                    width: 9vw;
+                    height: 5vh;
+                    border-radius: 0.5vw;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                #sprache {
+                    background-color: var(--blueTextColor);
                     width: 9vw;
                     height: 5vh;
                     border-radius: 0.5vw;

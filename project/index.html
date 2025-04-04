@@ -41,7 +41,7 @@
                 <img src="img/assets/icons/games.png" alt="gameicon" id="navbuttongameicon">
                 <p>Game</p>
             </div>
-            <div id="settings" onclick="OpenOverlays(settings)">
+            <div id="settings" onclick="OpenOverlays('settings')">
                 <img src="img/assets/icons/setting.png" alt="settingsicon" id="navbuttonsettingsicon">
                 <p>Settings</p>
             </div>
@@ -51,16 +51,16 @@
         <div id="settingspopup">
             <div id="settingsPopupSprache">
                 <div id="innerrectangle">
-                    <div id="back" onclick="CloseOverlays(settings)">
+                    <div id="back" onclick="CloseOverlays('settings')">
                         <img src="img/assets/icons/back.png" alt="" id="backbutton">
                         <p id="einstellungen">Einstellungen</p>
                     </div>
                     <div id="changeSprache">
                         <div id="changesettingbuttons">
-                            <div id="darkmode">
+                            <div id="darkmode" onclick="isActive('darkmode')">
                                 <p>Dark mode</p>
                             </div>
-                            <div id="sprache" class="active">
+                            <div id="sprache" onclick="isActive('sprache')">
                                 <p>Sprache</p>
                             </div>
                         </div>
@@ -80,8 +80,12 @@
                     </div>
                 </div>
             </div>
+            <div id="settingsPopupDarkmode">
+
+            </div>
+
         </div>
-        
+
 
     </div>
 
