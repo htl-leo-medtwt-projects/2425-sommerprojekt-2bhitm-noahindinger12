@@ -24,11 +24,11 @@
     --hintColor: #FFFB00;
 }
 
-body {
+#body {
     box-sizing: border-box;
     overflow: hidden;
-    background-color: var(--backgroundColor);
     user-select: none;
+    background-color: var(--backgroundColor);
 }
 
 #contianer {
@@ -219,6 +219,7 @@ nav {
 }
 
 #settingsPopupSprache {
+    
     z-index: 1000;
     width: 60vw;
     height: 77vh;
@@ -239,13 +240,13 @@ nav {
         height: 68vh;
         background-color: white;
 
-        #speichernbuttons {
+        .speichernbuttons {
             display: flex;
             gap: 3vw;
             margin-left: 7vw;
             margin-top: 3vh;
 
-            #savebutton {
+            .savebutton {
                 background-color: var(--blueTextColor);
                 color: white;
                 width: 9vw;
@@ -256,7 +257,7 @@ nav {
                 align-items: center;
             }
 
-            #standardSprache {
+            .standardButton {
                 color: var(--blueTextColor);
                 width: 9vw;
                 height: 5vh;
@@ -288,13 +289,13 @@ nav {
         }
 
         #changeSprache {
-            #changesettingbuttons {
+            .changesettingbuttons {
                 display: flex;
                 gap: 3vw;
                 margin-left: 7vw;
                 margin-top: 3vh;
 
-                #darkmode {
+                .darkmode {
                     background-color: var(--grayBackColor);
                     width: 9vw;
                     height: 5vh;
@@ -303,7 +304,8 @@ nav {
                     justify-content: center;
                     align-items: center;
                 }
-                #sprache {
+
+                .sprache {
                     background-color: var(--blueTextColor);
                     width: 9vw;
                     height: 5vh;
@@ -320,6 +322,7 @@ nav {
                 margin-left: 7.5vw;
                 margin-top: 6vh;
                 margin-bottom: 6vh;
+
                 img {
                     width: 8vw;
                 }
@@ -331,3 +334,122 @@ nav {
 
 
 }
+
+
+
+#settingsPopupDarkmode {
+    display: none;
+    z-index: 1000;
+    width: 60vw;
+    height: 77vh;
+    background-color: var(--grayBackColor);
+    border-radius: 5vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    #innerrectangleDarkmode {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 5vw;
+        width: 56vw;
+        height: 68vh;
+        background-color: white;
+
+        #backDarkmode {
+            display: flex;
+            gap: 1vw;
+            margin-left: 2vw;
+            margin-top: 2vh;
+
+            #backbuttonDarkmode {
+                margin-top: 1vh;
+                width: 4vw;
+                height: 4vw;
+            }
+
+            #einstellungenDarkmode {
+                color: black;
+                font-family: passionone;
+                letter-spacing: 1px;
+                font-size: 4vh;
+            }
+        }
+
+        #changeMode {
+            .changesettingbuttons {
+                display: flex;
+                gap: 3vw;
+                margin-left: 7vw;
+                margin-top: 3vh;
+
+                .darkmode {
+                    background-color: var(--grayBackColor);
+                    width: 9vw;
+                    height: 5vh;
+                    border-radius: 0.5vw;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .sprache {
+                    background-color: var(--blueTextColor);
+                    width: 9vw;
+                    height: 5vh;
+                    border-radius: 0.5vw;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+
+            #darkLightMode {
+                display: flex;
+                gap: 4vw;
+                margin-left: 7.5vw;
+                margin-top: 6vh;
+                margin-bottom: 6vh;
+
+                img {
+                    width: 8vw;
+                }
+            }
+        }
+
+        .speichernbuttons {
+            display: flex;
+            gap: 3vw;
+            margin-left: 7vw;
+            margin-top: 3vh;
+
+            .savebutton {
+                background-color: var(--blueTextColor);
+                color: white;
+                width: 9vw;
+                height: 5vh;
+                border-radius: 0.5vw;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .standardButton {
+                color: var(--blueTextColor);
+                width: 9vw;
+                height: 5vh;
+                border-radius: 0.5vw;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+
+    }
+}
+
+
