@@ -273,9 +273,25 @@ function isActive(id) {
       //darkmodeMenueButton.style.backgroundColor = "var(--blueTextColor)"
       //spracheMenueButton.style.backgroundColor = "var(--grayBackColor)"
       settingsSprache.style.display = "none";
-      settingsDarkmode.style.display = "block"
+      settingsDarkmode.style.display = "block";
       break;
   }
+}
+
+let quickTest = document.getElementById("quickTest");
+let detailedTest = document.getElementById("detailedTest");
+
+function switchTestMode(id) {
+    switch (id) {
+        case "quick":
+            quickTest.style.backgroundColor = "#f8d7d7";
+            detailedTest.style.backgroundColor = "var(--light-gray)";
+            break;
+        case "detailed":
+            quickTest.style.backgroundColor = "var(--light-gray)";
+            detailedTest.style.backgroundColor = "#f8d7d7";
+            break;
+    }
 }
 
 //------------------SelectSettings and Save------------------------------------------------------------------------

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wahl-O-Mat - VoteXpert</title>
+  <link rel="stylesheet" href="../style/wahlomat.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <script src="../script/script.js" defer></script>
+  <link rel="icon" type="image/x-icon" href="../img/logos/VoteXpertLogo.png">
+</head>
+<body>
+  <div class="container">
+    <nav class="sidebar">
+      <div class="sidebar-content">
+        <a href="#" class="logo-link">Wahl Ö Mat</a>
+        
+        <ul class="nav-links">
+          <li><a href="#">News</a></li>
+          <li><a href="https://parlament.gv.at" target="_blank">Parlament</a></li>
+          <li><a href="../pages/game.html">Game</a></li>
+        </ul>
+      </div>
+      
+      <div class="sidebar-footer">
+        <div class="votexpert-logo">
+          <span class="vote">Vote</span><span class="xpert">xpert</span>
+        </div>
+      </div>
+    </nav>
+    
+    <main class="main-content">
+      <header class="party-logos">
+        <div class="logo-container">
+          <div class="logo">
+            <a href="#" target="_blank">
+              <img src="../img/logos/partys/apoe.png" alt="APÖ Logo">
+            </a>
+          </div>
+          <div class="logo">
+            <a href="https://www.neos.eu" target="_blank">
+              <img src="../img/logos/partys/neos.png" alt="NEOS Logo">
+            </a>
+          </div>
+          <div class="logo">
+            <a href="https://www.gruene.at" target="_blank">
+              <img src="../img/logos/partys/gruene.png" alt="DIE GRÜNEN Logo">
+            </a>
+          </div>
+          <div class="logo">
+            <a href="https://www.spoe.at" target="_blank">
+              <img src="../img/logos/partys/spoe.png" alt="SPÖ Logo">
+            </a>
+          </div>
+          <div class="logo">
+            <a href="https://www.fpoe.at" target="_blank">
+              <img src="../img/logos/partys/fpoe.png" alt="FPÖ Logo">
+            </a>
+          </div>
+          <div class="logo">
+            <a href="https://www.oevp.at" target="_blank">
+              <img src="../img/logos/partys/oevp.png" alt="DIE VOLKSPARTEI Logo">
+            </a>
+          </div>
+          
+        </div>
+      </header>
+      
+      <section class="quiz-intro">
+        <h1>Finde heraus, welche Partei zu dir passt!</h1>
+        
+        <p class="description">
+          Beantworte einige Fragen zu politischen Themen, und wir zeigen dir, welche Partei am besten mit deinen Ansichten übereinstimmt.
+        </p>
+        
+        <div class="quiz-info">
+          <div class="info-item">
+            <span class="icon">⏱</span>
+            <span class="text">Dauer: ca. 5 Minuten</span>
+          </div>
+          <span class="separator">|</span>
+          <div class="info-item">
+            <span class="icon">❓</span>
+            <span class="text">10–15 Fragen</span>
+          </div>
+        </div>
+        
+        <div class="quiz-options">
+          <div class="quiz-card quick" id="quickTest" onclick="switchTestMode('quick')">
+            <h2>Schnelltest</h2>
+            <p>5 Fragen, grobe Einschätzung</p>
+          </div>
+          
+          <div class="quiz-card detailed" id="detailedTest" onclick="switchTestMode('detailed')">
+            <h2>Detaillierter Test</h2>
+            <p>15 Fragen, genauere Analyse</p>
+          </div>
+        </div>
+        
+        <div class="actions">
+          <button class="start-button">Test starten</button>
+          <a href="../index.html" class="unsure-link">Ich bin mir nicht sicher</a>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
