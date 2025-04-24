@@ -24,6 +24,11 @@
     --hintColor: #FFFB00;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
 #body {
     box-sizing: border-box;
     overflow: hidden;
