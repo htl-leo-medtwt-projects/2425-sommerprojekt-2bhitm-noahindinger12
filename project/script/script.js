@@ -258,7 +258,7 @@ function CloseOverlays(id) {
   }
 }
 
-//----------------IsActiveButtonAndSwitchSettings--------------------------------------------------------------
+//----------------IsActiveButtonAndSwitchSettingsAndSwitchButtons--------------------------------------------------------------
 
 
 function isActive(id) {
@@ -290,6 +290,22 @@ function switchTestMode(id) {
         case "detailed":
             quickTest.style.backgroundColor = "var(--light-gray)";
             detailedTest.style.backgroundColor = "#f8d7d7";
+            break;
+    }
+}
+
+let klassicMode = document.getElementById("klassicMode");
+let speedGuess = document.getElementById("speedGuess");
+
+function switchGameMode(id) {
+    switch (id) {
+        case "klassicMode":
+            klassicMode.style.backgroundColor = "#00569c58";
+            speedGuess.style.backgroundColor = "#d9d9d949";
+            break;
+        case "speedGuess":
+            speedGuess.style.backgroundColor = "#00569c58";
+            klassicMode.style.backgroundColor = "#d9d9d949";
             break;
     }
 }

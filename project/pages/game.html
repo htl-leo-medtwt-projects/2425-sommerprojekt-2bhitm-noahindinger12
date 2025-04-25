@@ -1,64 +1,71 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="../img/logos/VoteXpertLogo.png">
     <link rel="stylesheet" href="../style/game.css">
+    <script src="../script/script.js" defer></script>
     <title>Game - VoteXpert</title>
 </head>
+
 <body>
     <div id="container">
 
         <nav>
             <a href="../index.html">
-              <div id="home">
-                <img src="../img/assets/icons/home.png" alt="hausicon" id="navbuttonhomeicon">
-                <p>Home</p>
-            </div>
+                <div id="home">
+                    <img src="../img/assets/icons/home.png" alt="hausicon" id="navbuttonhomeicon">
+                    <p>Home</p>
+                </div>
             </a>
             <a href="../pages/about.html">
-            <div id="login">
-                <img src="../img//assets/icons/user.png" alt="usericon" id="navbuttonloginicon">
-                <p>About us</p>
-            </div> 
+                <div id="login">
+                    <img src="../img//assets/icons/user.png" alt="usericon" id="navbuttonloginicon">
+                    <p>About us</p>
+                </div>
             </a>
             <div id="game">
                 <img src="../img/assets/icons/games.png" alt="gameicon" id="navbuttongameicon">
                 <p>Game</p>
             </div>
             <a href="../index.html">
-              <div id="settings" onclick="OpenOverlays('settings')">
-                <img src="../img/assets/icons/setting.png" alt="settingsicon" id="navbuttonsettingsicon">
-                <p>Settings</p>
-            </div>
+                <div id="settings" onclick="OpenOverlays('settings')">
+                    <img src="../img/assets/icons/setting.png" alt="settingsicon" id="navbuttonsettingsicon">
+                    <p>Settings</p>
+                </div>
             </a>
         </nav>
 
         <div id="maintext">
             <h2>Teste dein Wissen über Politiker!</h2>
-        <p>
-            Errate anhand von Bildern die Namen <br>
-            berühmter Politiker aus  Österrich. Schaffst du es, alle zu erkennen?
-        </p>
-        <div id="gameStartButton">
-            <p>Spiel starten</p>
+            <p>
+                Errate anhand von Bildern die Namen <br>
+                berühmter Politiker aus Österrich. Schaffst du es, alle zu erkennen?
+            </p>
+            <div id="gameStartButton">
+                <p>Spiel starten</p>
+            </div>
+
+            <div id="options">
+                <div id="klassicMode" class="Mode" onclick="switchGameMode('klassicMode')">
+                    <h3>KLassischer Modus</h3>
+                    <p>Spiele ohne Zeitdruck</p>
+                </div>
+                <div id="speedGuess" class="Mode" onclick="switchGameMode('speedGuess')">
+                    <h3>Schnellraten</h3>
+                    <p>Teste deine Schnelligkeit</p>
+                </div>
+            </div>
+
+
         </div>
 
-        <div id="klassicMode">
-            <h3>KLassischer Modus</h3>
-            <p>Spiele ohne Zeitdruck</p>
-        </div>
-        <div id="speedGuess">
-            <h3>Schnellraten</h3>
-            <p>Teste deine Schnelligkeit</p>
-        </div>
-
-        </div>
-        
 
 
     </div>
 
 </body>
+
 </html>
