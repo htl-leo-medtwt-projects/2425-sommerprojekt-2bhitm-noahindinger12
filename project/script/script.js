@@ -211,6 +211,19 @@ let spracheMenueButton = document.getElementsByClassName("sprache");
 let darkmodeMenueButton = document.getElementsByClassName("darkmode");
 let mainHeadline = document.getElementById("mainHeadline");
 
+let gameStartButtonFillInLink = document.getElementById("gameStartButton-fillInLink")
+let normalGameButtonHTMLString = `<a href="../pages/game-normal.html">
+                            <div id="gameStartButton">
+                                <p>Spiel starten</p>
+                            </div>
+                        </a>`
+
+let speedGuessGameButtonHTMLString =`<a href="../pages/game-speed.html">
+                                <div id="gameStartButton">
+                                    <p>Spiel starten</p>
+                                </div>
+                            </a>`
+
 let sprachenAuswahl;
 let modeAuswahl;
 
@@ -302,10 +315,12 @@ function switchGameMode(id) {
         case "klassicMode":
             klassicMode.style.backgroundColor = "#00569c58";
             speedGuess.style.backgroundColor = "#d9d9d949";
+            gameStartButtonFillInLink.innerHTML = normalGameButtonHTMLString;
             break;
         case "speedGuess":
             speedGuess.style.backgroundColor = "#00569c58";
             klassicMode.style.backgroundColor = "#d9d9d949";
+            gameStartButtonFillInLink.innerHTML = speedGuessGameButtonHTMLString;
             break;
     }
 }
