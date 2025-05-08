@@ -1,4 +1,4 @@
-[
+let data = [
     {
       "image": "img/noah_indinger.jpg",
       "correct": "Noah Indinger",

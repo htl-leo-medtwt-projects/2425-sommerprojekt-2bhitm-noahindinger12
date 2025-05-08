@@ -1,11 +1,9 @@
-let data = [];
+
   let currentIndex = 0;
   let score = 0;
   let usedHint = false;
 
   async function loadData() {
-    const res = await fetch('data.json');
-    data = await res.json();
     shuffleArray(data);
     showQuestion();
   }
