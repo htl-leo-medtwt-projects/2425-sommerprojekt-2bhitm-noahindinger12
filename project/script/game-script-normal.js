@@ -16,7 +16,7 @@ let data = [];
       location.reload();
       return;
     }
-
+  
     usedHint = false;
     const question = data[currentIndex];
     document.getElementById('politician-image').src = question.image;
