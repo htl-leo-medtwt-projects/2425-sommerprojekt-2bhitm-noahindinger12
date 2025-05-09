@@ -1,5 +1,4 @@
-{
-  "Fragen": [
+let fragen =  [
     {
       "Frage": "Soll die wöchentliche Arbeitszeit auf 32 Stunden reduziert werden?",
       "Antworten": {
@@ -166,4 +165,3 @@
       }
     }
   ]
-}
