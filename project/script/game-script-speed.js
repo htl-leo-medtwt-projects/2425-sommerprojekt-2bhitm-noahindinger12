@@ -3,7 +3,7 @@ let score = 0;
 let usedHint = false;
 let timer;
 let countdown;
-let timeLeft = 20;
+let timeLeft = 30;
 
 async function loadData() {
   shuffleArray(data);
