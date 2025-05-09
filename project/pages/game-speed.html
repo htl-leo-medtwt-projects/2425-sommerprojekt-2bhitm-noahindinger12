@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../style/game-style-speed.css">
+  <link rel="icon" type="image/x-icon" href="../img/logos/VoteXpertLogo.png">
+  <script src="../dateien/data.js"></script>
+  <script src="../script/game-script-speed.js" defer></script>
+  <title>Errate den Politiker - Speed Mode</title>
+</head>
+<body>
+
+<div class="top-bar">
+  <div class="top-left">
+    <span>🗳️</span>
+    <span class="title">Errate den Politiker</span>
+    <span><a href="../pages/game.html">↩️</a></span>
+  </div>
+  <div class="top-right">
+    <span>⏱️ Zeit: <span id="timer">20</span>s</span>
+    <span>🏆 Score: <span id="score">0</span></span>
+    <span id="help" style="cursor:pointer">❓</span>
+  </div>
+</div>
+
+<div class="main-container">
+  <div class="quiz-box">
+    <div class="image-container">
+      <img id="politician-image" src="" alt="Politiker">
+    </div>
+    <div class="options" id="options"></div>
+    <div class="hint-section">
+      <a id="show-hint">Hinweis?</a>
+      <div class="hint" id="hint"></div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="help-modal">
+  <div class="modal-content">
+    <p>Du siehst ein Bild eines österreichischen Politikers.<br>
+    Wähle den richtigen Namen aus vier Optionen.<br>
+    Jede richtige Antwort bringt dir 1 Punkt.<br>
+    Nutze den "Hinweis?"-Button für einen Hinweis.<br>
+    ⏱️ Du hast 20 Sekunden insgesamt!</p>
+    <button onclick="closeHelp()">Schließen</button>
+  </div>
+</div>
+
+<div class="modal" id="timeout-modal">
+  <div class="modal-content">
+    <p>⏰ Zeit abgelaufen!<br>Dein Score: <span id="final-score"></span></p>
+    <button onclick="goToStart()">OK</button>
+  </div>
+</div>
+
+</body>
+</html>
