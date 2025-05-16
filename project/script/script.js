@@ -313,13 +313,13 @@ let speedGuess = document.getElementById("speedGuess");
 function switchGameMode(id) {
     switch (id) {
         case "klassicMode":
-            klassicMode.style.backgroundColor = "#00569c58";
-            speedGuess.style.backgroundColor = "#d9d9d949";
+            klassicMode.style.backgroundColor = "#00569c99";
+            speedGuess.style.backgroundColor = "#d9d9d999";
             gameStartButtonFillInLink.innerHTML = normalGameButtonHTMLString;
             break;
         case "speedGuess":
-            speedGuess.style.backgroundColor = "#00569c58";
-            klassicMode.style.backgroundColor = "#d9d9d949";
+            speedGuess.style.backgroundColor = "#00569c99";
+            klassicMode.style.backgroundColor = "#d9d9d999";
             gameStartButtonFillInLink.innerHTML = speedGuessGameButtonHTMLString;
             break;
     }

@@ -92,10 +92,11 @@ body {
     .Mode {
       height: 20vh;
       width: 20vw;
-      background-color: #00569c58;
+      background-color: #00569c99;
       border-radius: 2vw;
 
       h3 {
+        font-family: oswald;
         text-align: center;
         color: white;
         font-weight: bold;
@@ -105,13 +106,13 @@ body {
       p {
         margin-top: -2vh;
         text-align: center;
-        color: var(--grayTextColor);
+        color: white;
       }
 
     }
 
     #speedGuess {
-      background-color: #d9d9d949;
+      background-color: #d9d9d999;
     }
   }
 }
