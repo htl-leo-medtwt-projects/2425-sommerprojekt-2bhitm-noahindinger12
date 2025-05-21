@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,26 +12,27 @@
   <script src="../script/script.js" defer></script>
   <link rel="icon" type="image/x-icon" href="../img/logos/VoteXpertLogo.png">
 </head>
+
 <body>
   <div class="container">
     <nav class="sidebar">
       <div class="sidebar-content">
         <a href="#" class="logo-link">Wahl Ö Mat</a>
-        
+
         <ul class="nav-links">
           <li><a href="#">News</a></li>
           <li><a href="https://parlament.gv.at" target="_blank">Parlament</a></li>
           <li><a href="../pages/game.html">Game</a></li>
         </ul>
       </div>
-      
+
       <div class="sidebar-footer">
         <div class="votexpert-logo">
           <span class="vote">Vote</span><span class="xpert">xpert</span>
         </div>
       </div>
     </nav>
-    
+
     <main class="main-content">
       <header class="party-logos">
         <div class="logo-container">
@@ -64,17 +66,18 @@
               <img src="../img/logos/partys/oevp.png" alt="DIE VOLKSPARTEI Logo">
             </a>
           </div>
-          
+
         </div>
       </header>
-      
+
       <section class="quiz-intro">
         <h1>Finde heraus, welche Partei zu dir passt!</h1>
-        
+
         <p class="description">
-          Beantworte einige Fragen zu politischen Themen, und wir zeigen dir, welche Partei am besten mit deinen Ansichten übereinstimmt.
+          Beantworte einige Fragen zu politischen Themen, und wir zeigen dir, welche Partei am besten mit deinen
+          Ansichten übereinstimmt.
         </p>
-        
+
         <div class="quiz-info">
           <div class="info-item">
             <span class="icon">⏱</span>
@@ -86,25 +89,30 @@
             <span class="text">10–15 Fragen</span>
           </div>
         </div>
-        
+
         <div class="quiz-options">
           <div class="quiz-card quick" id="quickTest" onclick="switchTestMode('quick')">
             <h2>Schnelltest</h2>
             <p>5 Fragen, grobe Einschätzung</p>
           </div>
-          
+
           <div class="quiz-card detailed" id="detailedTest" onclick="switchTestMode('detailed')">
             <h2>Detaillierter Test</h2>
             <p>15 Fragen, genauere Analyse</p>
           </div>
         </div>
-        
+
         <div class="actions">
-          <button class="start-button">Test starten</button>
+          <div id="start-button">
+            <a href="./votetest.html">
+              <button class="start-button">Test starten</button>
+            </a>
+          </div>
           <a href="../index.html" class="unsure-link">Ich bin mir nicht sicher</a>
         </div>
       </section>
     </main>
   </div>
 </body>
+
 </html>

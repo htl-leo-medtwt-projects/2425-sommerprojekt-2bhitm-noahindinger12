@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VoteXpert</title>
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <link rel="stylesheet" href="../style/votetest-style.css" />
+    <script src="../dateien/fragen.js"></script>
+    <script src="../script/votetest-script.js" defer></script>
+    <link rel="icon" type="image/x-icon" href="../img/logos/VoteXpertLogo.png">
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h1>VoteXpert</h1>
+            <div id="progress" class="steps"></div>
+            <button id="nextBtn" class="next-button">Weiter</button>
+            <a href="./wahlomat.html">
+                <button>Test abbrechen</button>
+            </a>
+        </div>
+        <div class="main">
+            <div class="question-container">
+                <h2 id="question"></h2>
+                <button class="info-btn" onclick="toggleExplanation()">i</button>
+                <p id="explanation" class="hidden"></p>
+            </div>
+            <div id="answers" class="answers"></div>
+        </div>
+    </div>
+
+    <div id="ergebnisPopup" class="popup hidden">
+        <div class="popup-content">
+            <h2>Dein Ergebnis</h2>
+            <div id="piechart_3d" style="width: 100%; height: 400px;"></div>
+            <button onclick="schließePopup()">Schließen</button>
+        </div>
+    </div>
+
+</body>
+</html>
