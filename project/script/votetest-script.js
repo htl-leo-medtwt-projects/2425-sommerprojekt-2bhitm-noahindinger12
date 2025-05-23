@@ -129,18 +129,18 @@ function zeichneDiagramm() {
       ]);
   
       let optionen = {
-        title: 'Punkteverteilung',
+        title: 'Prozentübersicht',
         is3D: true,
         colors: [
           '#f39200', // APÖ = Orange
           '#d71c29', // SPÖ = Rot
           '#81c784', // Grüne = Grün
-          '#63aaff', // ÖVP = Blau
-          '#191919', // FPÖ = Schwarz
+          '#191919', // ÖVP = Schwarz
+          '#63aaff', // FPÖ = Blau
           '#ff00cc'  // NEOS = Pink
         ],
         titleTextStyle: {
-          fontSize: 24
+          fontSize: 20
         }
       };
   

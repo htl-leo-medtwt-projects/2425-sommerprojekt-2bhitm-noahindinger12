@@ -3,6 +3,7 @@ body {
     font-family: 'Segoe UI', sans-serif;
     background-color: #e0e0e0;
     color: #222;
+    user-select: none;
   }
 
   a {

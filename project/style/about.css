@@ -14,66 +14,66 @@
 }
 
 :root {
-    --primary: #00569C;
-    --lightblue: #e6f0ff;
-    --text: #000000;
-    --background: #ffffff;
-    --blueTextColor: #00569C;
-    --grayTextColor: #737373;
-    --grayBackColor: #D9D9D9;
-    --navColor: #008573;
-    --buttonColor: #C2464B;
-    --buttonColorlight: rgba(194, 70, 75, 0.58);
-    --hintColor: #FFFB00;
-  }
+  --primary: #00569C;
+  --lightblue: #e6f0ff;
+  --text: #000000;
+  --background: #ffffff;
+  --blueTextColor: #00569C;
+  --grayTextColor: #737373;
+  --grayBackColor: #D9D9D9;
+  --navColor: #008573;
+  --buttonColor: #C2464B;
+  --buttonColorlight: rgba(194, 70, 75, 0.58);
+  --hintColor: #FFFB00;
+}
 
-  a {
-    text-decoration: none;
-    color: black;
-  }
+a {
+  text-decoration: none;
+  color: black;
+}
 
-  body {
-    box-sizing: border-box;
-    user-select: none;
-  }
+body {
+  box-sizing: border-box;
+  user-select: none;
+}
 
 #contianer {
   height: 100vh;
   width: 100vw;
 }
 
-  .section {
-    padding: 60px 10vw;
-    background-color: var(--lightblue);
-    font-family: 'Segoe UI', sans-serif;
+.section {
+  padding: 60px 10vw;
+  background-color: var(--lightblue);
+  font-family: 'Segoe UI', sans-serif;
 
-    .section:nth-child(even) {
-      background-color: #fdfdfd;
-    }
-  
-    h2 {
-      font-size: 2.2rem;
-      color: var(--primary);
-      margin-bottom: 20px;
-    }
-  
-    p {
-      font-size: 1.15rem;
-      margin-bottom: 20px;
-      max-width: 900px;
-    }
-  
-    .highlight {
-      font-weight: bold;
-      color: var(--primary);
-    }
-
-    .noahLink {
-      color: blue;
-      text-decoration: underline;
-    }
-
+  .section:nth-child(even) {
+    background-color: #fdfdfd;
   }
+
+  h2 {
+    font-size: 2.2rem;
+    color: var(--primary);
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 1.15rem;
+    margin-bottom: 20px;
+    max-width: 900px;
+  }
+
+  .highlight {
+    font-weight: bold;
+    color: var(--primary);
+  }
+
+  .noahLink {
+    color: blue;
+    text-decoration: underline;
+  }
+
+}
 
 
 /*------------------NAV---------------------*/
@@ -85,113 +85,113 @@ nav {
   background-color: var(--lightblue);
 
   #home {
-      background-color: var(--grayBackColor);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 25vh;
-      height: 25vh;
-      border-radius: 12.5vh;
-      margin-right: 2vw;
+    background-color: var(--grayBackColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25vh;
+    height: 25vh;
+    border-radius: 12.5vh;
+    margin-right: 2vw;
 
-      p {
-          font-weight: bolder;
-          font-size: 2.5vh;
-          margin-bottom: -9vh;
-      }
+    p {
+      font-weight: bolder;
+      font-size: 2.5vh;
+      margin-bottom: -9vh;
+    }
 
-      #navbuttonhomeicon {
-          height: 3vh;
-          margin-bottom: -11vh;
-          margin-right: 0.4vw;
-      }
+    #navbuttonhomeicon {
+      height: 3vh;
+      margin-bottom: -11vh;
+      margin-right: 0.4vw;
+    }
   }
 
   #login {
-      background-color: var(--blueTextColor);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 25vh;
-      height: 25vh;
-      border-radius: 12.5vh;
-      margin-right: 2vw;
+    background-color: var(--blueTextColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25vh;
+    height: 25vh;
+    border-radius: 12.5vh;
+    margin-right: 2vw;
 
-      p {
-          font-weight: bolder;
-          font-size: 2.5vh;
-          margin-bottom: -9vh;
-      }
+    p {
+      font-weight: bolder;
+      font-size: 2.5vh;
+      margin-bottom: -9vh;
+    }
 
-      #navbuttonloginicon {
-          height: 3vh;
-          margin-bottom: -11vh;
-          margin-right: 0.4vw;
-      }
+    #navbuttonloginicon {
+      height: 3vh;
+      margin-bottom: -11vh;
+      margin-right: 0.4vw;
+    }
   }
 
   #game {
-      background-color: var(--grayBackColor);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 25vh;
-      height: 25vh;
-      border-radius: 12.5vh;
-      margin-right: 2vw;
+    background-color: var(--grayBackColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25vh;
+    height: 25vh;
+    border-radius: 12.5vh;
+    margin-right: 2vw;
 
-      p {
-          font-weight: bolder;
-          font-size: 2.5vh;
-          margin-bottom: -9vh;
-      }
+    p {
+      font-weight: bolder;
+      font-size: 2.5vh;
+      margin-bottom: -9vh;
+    }
 
-      #navbuttongameicon {
-          height: 3vh;
-          margin-bottom: -11vh;
-          margin-right: 0.4vw;
-      }
+    #navbuttongameicon {
+      height: 3vh;
+      margin-bottom: -11vh;
+      margin-right: 0.4vw;
+    }
   }
 
   #settings {
-      background-color: var(--grayBackColor);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 25vh;
-      height: 25vh;
-      border-radius: 12.5vh;
-      margin-right: 2vw;
+    background-color: var(--grayBackColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25vh;
+    height: 25vh;
+    border-radius: 12.5vh;
+    margin-right: 2vw;
 
-      p {
-          font-weight: bolder;
-          font-size: 2.5vh;
-          margin-bottom: -9vh;
-      }
+    p {
+      font-weight: bolder;
+      font-size: 2.5vh;
+      margin-bottom: -9vh;
+    }
 
-      #navbuttonsettingsicon {
-          height: 3vh;
-          margin-bottom: -11vh;
-          margin-right: 0.4vw;
-      }
+    #navbuttonsettingsicon {
+      height: 3vh;
+      margin-bottom: -11vh;
+      margin-right: 0.4vw;
+    }
   }
 
 }
 
-  @media (max-width: 768px) {
-    .hero h1 {
-      font-size: 2.4rem;
-    }
-
-    h2 {
-      font-size: 1.6rem;
-    }
-
-    p {
-      font-size: 1rem;
-    }
-
-    .section {
-      padding: 40px 20px;
-    }
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.4rem;
   }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .section {
+    padding: 40px 20px;
+  }
+}
