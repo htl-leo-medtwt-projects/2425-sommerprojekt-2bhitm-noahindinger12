@@ -293,16 +293,30 @@ function isActive(id) {
 
 let quickTest = document.getElementById("quickTest");
 let detailedTest = document.getElementById("detailedTest");
+let startButton = document.getElementById("start-button");
+
+let startButtonQuickTest = `
+<a href="./votetest-schnell.html">
+    <button class="start-button">Test starten</button>
+</a>
+`;
+let startButtonDetailedTest = `
+<a href="./votetest.html">
+    <button class="start-button">Test starten</button>
+</a>
+`;
 
 function switchTestMode(id) {
     switch (id) {
         case "quick":
             quickTest.style.backgroundColor = "#f8d7d7";
             detailedTest.style.backgroundColor = "var(--light-gray)";
+            startButton.innerHTML = startButtonQuickTest;
             break;
         case "detailed":
             quickTest.style.backgroundColor = "var(--light-gray)";
             detailedTest.style.backgroundColor = "#f8d7d7";
+            startButton.innerHTML = startButtonDetailedTest;
             break;
     }
 }
